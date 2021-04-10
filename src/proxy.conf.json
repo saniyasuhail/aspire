@@ -1,0 +1,11 @@
+{
+    "/api": {
+        "target": "http://68.183.82.129:8080/aspiring4",
+        "secure": false,
+        "pathRewrite":{
+            "^/api":""
+        },
+        "changeOrigin":true,
+        "logLevel": "debug"
+    }
+}

@@ -1,0 +1,18 @@
+.error {
+    color: #dc3545;
+}
+  .success {
+    color: #28a745;
+  }
+  .row-container {
+    display: flex;
+  }
+  .icon-column {
+    flex: 5%;
+    padding-right: 5px;
+  }
+  .text-column {
+    flex: 95%;
+    text-align: center;
+    color: white;
+  }

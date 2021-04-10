@@ -1,0 +1,191 @@
+<section class="vh-100" style="background: url('assets/images/signup-bg.jpg') center center;">
+    <div class="home-center">
+        <div class="home-desc-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="login_page bg-white shadow rounded p-4">
+                            <div class="text-center">
+                                <h4 class="mb-4">Employer Signup</h4>  
+                            </div>
+                            <form [formGroup]="employerSignupForm" (submit)="signup()" class="login-form">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group position-relative">  
+                                            <label>Hotel Name <span class="text-danger">*</span></label>
+                                            <mat-form-field >
+                                              <input
+                                                type="text"
+                                                formControlName="hotel_name"
+                                                
+                                                class="form-control"
+                                                placeholder="Hotel Name" name="hotel_name" required=""
+                                              />
+                                             
+                                            </mat-form-field>                                             
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group position-relative">                                                
+                                            <label>Contact Person <span class="text-danger">*</span></label>
+                                            <mat-form-field >
+                                                <input
+                                                  type="text"
+                                                  formControlName="contact_person"
+                                                  matInput
+                                                  class="form-control"
+                                                  placeholder="Contact Person" name="contact_person" required=""
+                                                />
+                                              </mat-form-field>   
+                                          
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group position-relative">
+                                            <label>Mobile Number <span class="text-danger">*</span></label>
+                                            <mat-form-field >
+                                                <input
+                                                  type="phone"
+                                                  formControlName="phone"
+                                                  matInput
+                                                  class="form-control"
+                                                  placeholder="Phone" name="phone" required=""
+                                                />
+                                              </mat-form-field>   
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group position-relative">
+                                            <label>Email <span class="text-danger">*</span></label>
+                                            <mat-form-field >
+                                                <input
+                                                  type="email"
+                                                  formControlName="email"
+                                                  matInput
+                                                  class="form-control"
+                                                  placeholder="Email" name="email" required=""
+                                                />
+                                              </mat-form-field>   
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative">
+                                            <label>State <span class="text-danger">*</span></label>
+                                            <mat-form-field id="state" class="form-control">
+                                                <mat-label>Select State</mat-label>
+                                                <mat-select  >
+                                                    <mat-option value="">Select State</mat-option>
+                                                    <mat-option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</mat-option>
+                                                    <mat-option value="Andhra Pradesh">Andhra Pradesh</mat-option>
+                                                    <mat-option value="Arunachal Pradesh">Arunachal Pradesh</mat-option>
+                                                    <mat-option value="Assam">Assam</mat-option>
+                                                    <mat-option value="Bihar">Bihar</mat-option>
+                                                    <mat-option value="Chhattisgarh">Chhattisgarh</mat-option>
+                                                    <mat-option value="Daman and Diu">Daman and Diu</mat-option>
+                                                    <mat-option value="Delhi">Delhi</mat-option>
+                                                    <mat-option value="Goa">Goa</mat-option>
+                                                    <mat-option value="Gujarat">Gujarat</mat-option>
+                                                    <mat-option value="Haryana">Haryana</mat-option>
+                                                    <mat-option value="Himachal Pradesh">Himachal Pradesh</mat-option>
+                                                    <mat-option value="Jammu and Kashmir">Jammu and Kashmir</mat-option>
+                                                    <mat-option value="Jharkhand">Jharkhand</mat-option>
+                                                    <mat-option value="Karnataka">Karnataka</mat-option>
+                                                    <mat-option value="Kerala">Kerala</mat-option>
+                                                    <mat-option value="Madhya Pradesh">Madhya Pradesh</mat-option>
+                                                    <mat-option value="Maharashtra">Maharashtra</mat-option>
+                                                    <mat-option value="Manipur">Manipur</mat-option>
+                                                    <mat-option value="Meghalaya">Meghalaya</mat-option>
+                                                    <mat-option value="Mizoram">Mizoram</mat-option>
+                                                    <mat-option value="Nagaland">Nagaland</mat-option>
+                                                    <mat-option value="Odisha">Odisha</mat-option>
+                                                    <mat-option value="Puducherry">Puducherry</mat-option>
+                                                    <mat-option value="Punjab">Punjab</mat-option>
+                                                    <mat-option value="Rajasthan">Rajasthan</mat-option>
+                                                    <mat-option value="Sikkim">Sikkim</mat-option>
+                                                    <mat-option value="Tamil Nadu">Tamil Nadu</mat-option>
+                                                    <mat-option value="Telangana">Telangana</mat-option>
+                                                    <mat-option value="Tripura">Tripura</mat-option>
+                                                    <mat-option value="Uttar Pradesh">Uttar Pradesh</mat-option>
+                                                    <mat-option value="Uttarakhand">Uttarakhand</mat-option>
+                                                    <mat-option value="West Bengal">West Bengal</mat-option> 
+                                                </mat-select>
+                                              </mat-form-field>
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative">
+                                            <label>City <span class="text-danger">*</span></label>
+                                            <mat-form-field id="city" class="form-control">
+                                                <mat-label>Select City</mat-label>
+                                                <mat-select>
+                                                    <mat-option value="">Select City</mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                           
+                                        </div>
+                                    </div> 
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative">
+                                            <label>Password <span class="text-danger">*</span></label>
+                                            <mat-form-field >
+                                                <input
+                                                type="password"
+                                                  formControlName="password"
+                                                  matInput
+                                                  class="form-control"
+                                                  placeholder="Password" name="password" required=""
+                                                />
+                                              </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group position-relative">
+                                            <label>Confirm Password <span class="text-danger">*</span></label>
+                                            <mat-form-field >
+                                                <input
+                                                  type="password"
+                                                  formControlName="confirm_password"
+                                                  matInput
+                                                  class="form-control"
+                                                  placeholder="Confirm Password" name="confirm_password" required=""
+                                                />
+
+                                              </mat-form-field>   
+                                           
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="custom-control m-0 custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button mat-button class="btn btn-primary w-100">Register</button>
+                                    </div>
+                                    <div class="col-lg-12 mt-4 text-center">
+                                        <h6>Or Signup With</h6>
+                                        <ul class="list-unstyled social-icon mb-0 mt-3">
+                                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-facebook" title="Facebook"></i></a></li>
+                                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-google-plus" title="Google"></i></a></li>
+                                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i class="mdi mdi-github-circle" title="Github"></i></a></li>
+                                        </ul><!--end icon-->
+                                    </div>
+                                    <div class="mx-auto">
+                                        <p class="mb-0 mt-3"><small class="text-dark mr-2">Already have an account ?</small> <a href="employer-login.html" class="text-dark font-weight-bold">Sign in</a></p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!--end col-->
+                </div><!--end row-->
+            </div> <!--end container-->
+        </div>
+    </div>
+</section>
